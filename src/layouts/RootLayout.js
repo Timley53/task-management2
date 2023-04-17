@@ -1,13 +1,11 @@
-import React, { createContext, useReducer} from 'react'
-import { json, NavLink, Outlet } from 'react-router-dom'
-import {AiOutlineAppstoreAdd} from 'react-icons/ai'
+import React, {  useReducer} from 'react'
+import { NavLink, Outlet } from 'react-router-dom'
 import {BsListColumns } from 'react-icons/bs'
 import {HiMenuAlt2 } from 'react-icons/hi'
 import {RiPlayList2Fill } from 'react-icons/ri'
 import {RxCross1 } from 'react-icons/rx'
 import { useState } from 'react'
 import { TaskContext } from '../Context'
-import data from '../data'
 import Form from '../Compnents/Form'
 
 
@@ -220,7 +218,7 @@ console.log(state);
 // console.log(store);
 
 
-const [pendingList, setPendingList] = useState(state?.allTasks.filter(map => map.status === 'pending'))
+// const [pendingList, setPendingList] = useState(state?.allTasks.filter(map => map.status === 'pending'))
 
 // const pendingList = state.allTasks.filter(map => map.status === 'pending')//pending
 
@@ -229,12 +227,12 @@ const [pendingList, setPendingList] = useState(state?.allTasks.filter(map => map
 
 // const [completedList, setCompletedList] = useState(state?.allTasks.filter(map => map.status === 'completed'))
 
-const completedList = state.allTasks.filter(map => map.status === 'completed')//complete
+// const completedList = state.allTasks.filter(map => map.status === 'completed')//complete
 
 
 // const [urgentList, setUrgentList] = useState(state?.allTasks.filter(map => map.Urgent === true && map.status === 'pending'))
 
-const urgentList = state.allTasks.filter(map => map.Urgent === true && map.status === 'pending')//urgent
+// const urgentList = state.allTasks.filter(map => map.Urgent === true && map.status === 'pending')//urgent
 
 
 // console.log(state);
@@ -290,7 +288,7 @@ const NewAddCont = (newAction)=>{
 
   return (
     
-<TaskContext.Provider value={{state, handleDispatch,pendingList,completedList,urgentList, widg,setOpenModal, openModal , NewTaskAdd, setNewTaskAdd, NewAddCont, title,setTitle,details,setDetails,urgent,setUrgent,formDataReset, openEdit, setOpenEdit,editId, setEditId }}>
+<TaskContext.Provider value={{state, handleDispatch, widg,setOpenModal, openModal , NewTaskAdd, setNewTaskAdd, NewAddCont, title,setTitle,details,setDetails,urgent,setUrgent,formDataReset, openEdit, setOpenEdit,editId, setEditId }}>
 
 
 <>

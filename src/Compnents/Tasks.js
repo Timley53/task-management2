@@ -2,15 +2,15 @@ import React, {useState, useContext} from 'react'
 import {MdCancel, MdDownloadDone} from 'react-icons/md'
 import { TaskContext } from '../Context'
 
-import {CgArrowsExpandLeft} from 'react-icons/cg'
 import {BiEdit} from 'react-icons/bi'
-import { openEditForm } from '../utiliy'
+// import { openEditForm } from '../utiliy'
+
 
 // import {AiOutlineFileDone} from 'react-icons/ai'
 
 function Tasks({id, Urgent,title, details, status, date, time }) {
 const [more, setMore] = useState(false)
-const {handleDispatch,state, formDataReset, NewAddCont, setOpenEdit, setOpenModal, openModal, editId, setEditId} = useContext(TaskContext)
+const {handleDispatch,state, formDataReset, NewAddCont, setOpenEdit, setOpenModal, openModal, setEditId} = useContext(TaskContext)
 
 
 //=======edit form=======

@@ -6,7 +6,7 @@ import { HeaderType, NoTask } from './small-components';
 
 
 function Urgent() {
-    const {urgentList, state} = useContext(TaskContext)
+    const { state} = useContext(TaskContext)
     // console.log(urgentList);
     
     const urgentNo = state.allTasks.filter(map => map.Urgent === true && map.status === 'pending').length

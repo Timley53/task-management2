@@ -1,15 +1,12 @@
-import React,{useState, useReducer, useContext, useEffect} from 'react'
+import React,{ useReducer, useContext} from 'react'
 import {TbUrgent} from 'react-icons/tb'
 import {MdPendingActions} from 'react-icons/md'
 import {BsWallet, BsCalendarCheck} from 'react-icons/bs'
-import { NavLink, Outlet } from 'react-router-dom'
-import data from '../data'
 import AllTasks from './homeLayouts/AllTasks'
 import { TaskContext } from '../Context'
 import Pending from '../Compnents/Pending'
 import Completed from '../Compnents/Completed' 
 import Urgent from '../Compnents/urgent'
-import { widgetContext } from './RootLayout'
 import NewTaskAdded from '../Compnents/NewTaskAdded'
 
 

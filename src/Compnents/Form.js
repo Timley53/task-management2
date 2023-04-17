@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react'
+import React, {useContext} from 'react'
 import { TaskContext } from '../Context'
 import {RxCross1 } from 'react-icons/rx'
 
@@ -6,11 +6,11 @@ import {RxCross1 } from 'react-icons/rx'
 
 
 function Form() {
-    const {handleDispatch, openModal , setOpenModal, NewAddCont,title,setTitle,details,setDetails,urgent,setUrgent, formDataReset, openEdit, setOpenEdit, editId, setEditId} = useContext(TaskContext)
+    const {handleDispatch, openModal , setOpenModal, NewAddCont,title,setTitle,details,setDetails,urgent,setUrgent, formDataReset, openEdit, setOpenEdit, editId} = useContext(TaskContext)
     
     const current = new Date();
    
-    const [invalid, setInvalid] = useState(false)
+    // const [invalid, setInvalid] = useState(false)
 
     
 

@@ -4,7 +4,6 @@ import {
   createRoutesFromElements,
   Route,
   RouterProvider,
-  Routes
 } from 'react-router-dom'
 
 
@@ -13,8 +12,7 @@ import RootLayout from './layouts/RootLayout';
 import Developer from './layouts/Developer';
 import Home from './layouts/Home';
 import Contact from './layouts/Contact';
-import AllTasks from './layouts/homeLayouts/AllTasks';
-import Tasks from './layouts/homeLayouts/Tasks';
+
 
 
 

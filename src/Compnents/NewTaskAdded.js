@@ -11,7 +11,7 @@ setTimeout(()=>{
   setNewTaskAdd('')
 }, 5000)
 
-},[])
+},[NewTaskAdd])
 
   return (
     <div className={`${NewTaskAdd ? 'translate-[0%]' : 'translate-[100%]'} transition duration-1000 fixed right-6 bottom-3 text-white-700 text-[0.9rem]  w-auto md:w-auto bg-green-800 rounded-md p-2 `}>

@@ -1,5 +1,4 @@
 import React,{useContext} from 'react'
-import { GrAdd } from 'react-icons/gr';
 import { TaskContext } from '../Context'
 import Tasks from './Tasks';
 import { HeaderType, NoTask } from './small-components';

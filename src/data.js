@@ -1,4 +1,4 @@
-export default [
+const data = [
     {
         id: 1,
         status: 'pending',
@@ -67,3 +67,5 @@ export default [
     
     
 ]
+
+export default data
