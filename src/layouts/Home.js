@@ -110,14 +110,14 @@ return (
 
 </div> */}
 
-    <div className={`md:-translate-x-0 fixed bg-slate-700  ${widg}  transition-all  h-screen span  md:h-full w-[7rem] md:w-[12rem] items-center flex flex-col md:p-3`}>
+    <div className={`md:-translate-x-0 fixed bg-slate-700  ${widg}  transition-all   h-screen span  md:h-full w-[7rem] md:w-[12rem] items-center flex flex-col md:block md:p-3`}>
 
 
     <article
       onClick={()=>dispatchShowType({type:'allTasks'})} 
     
-    className={`hidden md:flex md:w-[8rem] align-center  justify-between my-5 hover:bg-slate-500 py-1 px-2  text-white-900 rounded`}>
-<button className='text-2xl md:text-lg'>
+    className={`hidden md:flex align-center py-1 px-2  my-5 cursor-pointer hover:bg-slate-500  text-white-900 rounded md:w-full`}>
+<button className='text-2xl md:mr-3  md:text-lg'>
   <BsWallet/>
   
 </button>
@@ -133,9 +133,9 @@ return (
     <article 
      onClick={()=>dispatchShowType({type:'pending'})} 
     
-    className={`flex align-center py-1 justify-between my-5 hover:bg-yellow-500 py-1 px-2  text-white-900 rounded md:w-[8rem]`}>
+    className={`flex align-center py-1 px-2 my-5 hover:bg-yellow-500  cursor-pointer text-white-900 rounded md:w-full`}>
 
-<button className='text-2xl md:text-2xl'>
+<button className='text-2xl md:p-0 px-5 md:mr-3 md:text-2xl'>
   <MdPendingActions/>
   
 </button>
@@ -152,9 +152,9 @@ return (
     
     onClick={()=>dispatchShowType({type:'completed'})} 
 
-    className={`flex align-center py-1 justify-between  my-5 hover:bg-green-600 py-1 px-2 md:w-[8rem]  text-white-900 rounded `}>
+    className={`flex align-center py-1 px-2  my-5 hover:bg-green-500 cursor-pointer text-white-900 rounded md:w-full `}>
 
-<button className='text-2xl md:text-lg'>
+<button className='text-2xl md:p-0 px-5 md:mr-3 md:text-lg'>
   <BsCalendarCheck/>
   
 </button>
@@ -176,8 +176,9 @@ return (
     onClick={()=>dispatchShowType({type:'urgent'})} 
 
 
-    className={`flex align-center md:w-[8rem] justify-between   my-5 py-1 px-2  text-white-900 rounded hover:bg-red-500`}>
-<button className='text-2xl md:xl'>
+    className={`flex align-center py-1 px-2  my-5 hover:bg-red-500 cursor-pointer text-white-900 rounded md:w-full`}>
+
+<button className='text-2xl md:p-0 px-5 md:mr-3 md:xl'>
   <TbUrgent/>
 
 </button>

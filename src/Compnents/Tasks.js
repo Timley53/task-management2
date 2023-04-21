@@ -90,7 +90,7 @@ const delComp = (actionType, id)=>{
     <small className='text-cyan-500'>Title:</small>
     <p className='text-[0.95rem]'>  {title} </p>
     <small className='text-cyan-500'>Details</small>
-    <p className='my-2 text-[0.95rem]'>{more && details}
+    <p className='my-2 text-[0.90rem] break-words'>{more && details ||!more && details.slice(0,10)}
     <button className='text-cyan-600 underline text-xs' onClick={()=>setMore(!more)}>...{more ? 'less' : 'more'}</button>
     </p>
 

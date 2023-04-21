@@ -74,7 +74,7 @@ return
 <span onClick={() =>{
     formDataReset('','')
     setOpenEdit(false)
-    setOpenModal(!openModal)}}  className='text-green-600 p-3 hover:text-red-700'>
+    setOpenModal(!openModal)}}  className='text-green-600 p-3 hover:text-red-700 cursor-pointer'>
     <RxCross1/>
 </span>
 </header>
@@ -137,7 +137,7 @@ onClick={() =>{
 }
 
 
-className={`${hollowGreeen} border-2 border-green-600 hover:bg-green-700 rounded p-2 mx-2`}>
+className={`${hollowGreeen} cursor-pointer  border-2 border-green-600 hover:bg-green-700 rounded p-2 mx-2`}>
     Normal
 </span>
 
@@ -150,7 +150,8 @@ onClick={() =>{
 }
 
 className={`p-2 mx-2 
-rounded\
+rounded
+cursor-pointer
 
  ${urgent ? 'bg-red-500' : 'bg-transparent'}  
 
@@ -164,9 +165,9 @@ hover:bg-red-800
 
 
 
-{!openEdit && <button className='bg-green-800  p-2 hover:bg-transparent my-6 w-full rounded mx-auto  hover:text-green-600 '>
+{!openEdit && <button className='bg-green-800  p-2 hover:bg-transparent border-2 border-green-800 my-6 w-full rounded mx-auto  hover:text-green-600 '>
     Add new task 
-</button> || openEdit && <button className='bg-yellow-800  p-2 hover:bg-transparent my-6 w-full rounded mx-auto  hover:text-green-600 '>
+</button> || openEdit && <button className='bg-yellow-800  p-2 hover:bg-transparent my-6 w-full rounded mx-auto border-2 border-yellow-800 hover:text-yellow-600 '>
     Edit Task 
 </button>} 
 

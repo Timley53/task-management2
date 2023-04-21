@@ -20,12 +20,12 @@ function Developer() {
 
     <div className='m-auto'>
 
-    <h2 className='text-2xl mx-auto text-center text-green-600 my-5'>Timileyin Muhammed Adedokun</h2>
+    <h2 className='text-2xl mx-auto text-center md:text-left text-green-600 my-5'>Timileyin Muhammed Adedokun</h2>
 
     
 
 
-     <p className='w-[80%] mx-auto'>
+     <p className='w-[80%] text-center  md:text-left mx-auto md:mx-0'>
       
        A well driven front-end developer with a natural desire to grow and learn who excels at problem-solving and taking  on new challenges.
       
@@ -33,7 +33,7 @@ function Developer() {
 
 
 
-    <div className="socials my-5 w-[60%] mx-auto  flex juistify-between text-2xl">
+    <div className="socials my-5 w-[60%]  mx-auto md:mx-0  flex align-center juistify-between text-2xl">
 
       <a href="https://github.com/Timley53">
     <button><FaGithubSquare/></button>
